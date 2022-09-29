@@ -89,13 +89,17 @@ header ul {
     margin: 0 1rem;
 }
 
+.ms_menu-list li:hover a {
+    color: var(--ms_primary-color);
+}
+
 /* MAIN */
 .ms_section {
     padding: 3rem 0;
 }
 
 .ms_small-container {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -128,10 +132,22 @@ header ul {
     color: #ffffff;
 }
 
+.btn-outline-primary.ms_btn-outline-white:hover {
+    border-color: var(--ms_tertiary-color);
+    color: #ffffff;
+    background-color: var(--ms_tertiary-color);
+}
+
 /* CONTACT */
 .btn-primary.ms_btn-primary {
     border-color: var(--ms_primary-color);
     background-color: var(--ms_primary-color);
+}
+
+.btn-primary.ms_btn-primary:hover {
+    border-color: var(--ms_tertiary-color);
+    color: #ffffff;
+    background-color: var(--ms_tertiary-color);
 }
 
 .form-control.ms_floating-form-control {
@@ -150,9 +166,17 @@ header ul {
     height: 10rem;
 }
 
+.form-control:focus + label {
+    color: var(--ms_primary-color);
+}
+
 /* FOOTER */
 .ms_circle {
     line-height: 2rem;
     width: 2rem;
     height: 2rem;
+}
+
+.ms_circle:hover {
+    background-color: var(--ms_primary-color);
 }
